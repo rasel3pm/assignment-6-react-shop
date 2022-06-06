@@ -17,6 +17,11 @@
         height: 20px;
         padding: 10px;
         margin-bottom: 30px;
+        border-radius: 10px;
+        outline: none;
+        border: none;
+        background-color: black;
+        color: aliceblue;
     }
     
     .product {
@@ -45,6 +50,7 @@
     
     @media only screen and (max-width:600px) {
         .abc {
+            display: grid;
             grid-template-columns: 1fr;
             align-items: center;
             justify-content: center;
@@ -58,7 +64,7 @@
             padding: 8px;
         }
         .product {
-            width: 420px;
+            width: 400px;
             /* height: 250px; */
             background-color: rgb(72, 72, 73);
             padding: 10px;
