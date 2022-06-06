@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+    body {
+        background-color: rgb(53, 50, 50);
+        margin: 20px 50px;
+    }
+    
+    .abc {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    
+    .container {
+        text-align: center;
+    }
+    
+    .container input {
+        width: 50%;
+        height: 20px;
+        padding: 10px;
+        margin-bottom: 30px;
+    }
+    
+    .product {
+        width: 200px;
+        /* height: 250px; */
+        background-color: rgb(72, 72, 73);
+        padding: 10px;
+        margin-bottom: 5px;
+    }
+    
+    .item a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .product img {
+        width: 200px;
+        height: 150px;
+    }
+    
+    .footer-contant {
+        background-color: rgb(36, 34, 34);
+        color: white;
+        padding: 1px;
+    }
+    
+    @media only screen and (max-width:600px) {
+        .abc {
+            grid-template-columns: 1fr;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            margin: 10px;
+        }
+        .container input {
+            width: 100%;
+            height: 15px;
+            padding: 8px;
+        }
+        .product {
+            width: 420px;
+            /* height: 250px; */
+            background-color: rgb(72, 72, 73);
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .product img {
+            width: 90%;
+            height: auto;
+        }
+        .footer-contant {
+            background-color: rgb(36, 34, 34);
+            color: rgb(33, 36, 228);
+        }
+    }
