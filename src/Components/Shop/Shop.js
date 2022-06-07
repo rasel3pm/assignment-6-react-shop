@@ -2,6 +2,7 @@ import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 
 const Shop = () => {
     const [data,setData]=useState([])
@@ -23,7 +24,8 @@ const Shop = () => {
 
 
     return (<div className='container'>
-        <input type="text" onChange={searchFood} placeholder='Food Search'/>
+        
+        <input type="text" onChange={searchFood} placeholder='Food Search' /><FontAwesomeIcon className='icon' icon={faMagnifyingGlass}/>
         <div className='abc'>
             {
                 data.map(item=> 
