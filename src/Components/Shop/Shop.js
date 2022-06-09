@@ -25,7 +25,13 @@ const Shop = () => {
 
     return (<div className='container'>
         
-        <input type="text" onChange={searchFood} placeholder='Food Search' /><FontAwesomeIcon className='icon' icon={faMagnifyingGlass}/>
+        <div className="input-area">
+              <input type="text" onChange={searchFood} placeholder='Food Search' />
+              
+              <div className="input-icon">
+                     <FontAwesomeIcon className='icon' icon={faMagnifyingGlass}/>
+              </div>
+        </div>
         <div className='abc'>
             {
                 data.map(item=> 
@@ -33,8 +39,11 @@ const Shop = () => {
                         <div className="item">
                             <a href="#">
                             <img src={item.strMealThumb} alt="" />
-                            <p>{item.strMeal}</p>
                             </a>
+                        </div>
+                        <div className="product-name">
+                        <p>{item.strMeal}</p>
+                            <button className='Root-btn'>Buy Now</button>
                         </div>
                     </div>
                 )
